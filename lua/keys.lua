@@ -1,3 +1,3 @@
 local map = vim.api.nvim_set_keymap
 
-map('n', 't', [[:NvimTreeToggle<CR>]], {})
+map('n', "<Leader>t", [[:NvimTreeToggle<CR>]], {})
