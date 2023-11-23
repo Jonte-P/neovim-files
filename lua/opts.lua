@@ -1,7 +1,4 @@
-local opt = vim.opt
-local cmd = vim.api.nvim_command
-
-opt.syntax = "ON"
-opt.termguicolors = true
-cmd('colorscheme dracula')
-cmd('set noshowmode')
+vim.opt.syntax = "ON"
+vim.opt.termguicolors = true
+vim.cmd.colorscheme "catppuccin"
+vim.opt.showmode = false
