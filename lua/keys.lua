@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = '\\'
 vim.keymap.set('n', "<Leader>t", [[:NvimTreeToggle<CR>]], {})
 
 vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
