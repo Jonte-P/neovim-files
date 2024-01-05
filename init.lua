@@ -26,8 +26,7 @@ require('code_runner').setup({
       "$dir/a.out"
     },
     python = "python3 -u",
-    typescript = "deno run",
-    rust = {
+      rust = {
       "cd $dir &&",
       "rustc $fileName &&",
       "$dir/$fileNameWithoutExt"

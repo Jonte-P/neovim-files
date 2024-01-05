@@ -23,5 +23,6 @@ require("lazy").setup({
 	 { "L3MON4D3/LuaSnip" },
 	 { "rafamadriz/friendly-snippets" },
 	 { "CRAG666/code_runner.nvim", config = true },
+	 { "nvim-telescope/telescope.nvim", tag = '0.1.5', dependencies = { "nvim-lua/plenary.nvim", }, },
 
 })
