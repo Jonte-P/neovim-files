@@ -9,7 +9,6 @@ require('plugs.cmp')
 require('plugs.luasnip')
 -- Plugs
 require('nvim-tree').setup{}
-
 require('lualine').setup{
 	options = {
 		theme = 'catppuccin'
@@ -17,7 +16,7 @@ require('lualine').setup{
 }
 require('lspconfig')
 require('mason').setup()
-
+require('telescope').setup{}
 require('code_runner').setup({
   filetype = {
     c = {
@@ -33,3 +32,9 @@ require('code_runner').setup({
     },
   },
 })
+-- Telescope keys
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
