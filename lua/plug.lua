@@ -24,5 +24,11 @@ require("lazy").setup({
 	 { "rafamadriz/friendly-snippets" },
 	 { "CRAG666/code_runner.nvim", config = true },
 	 { "nvim-telescope/telescope.nvim", tag = '0.1.5', dependencies = { "nvim-lua/plenary.nvim", }, },
+	 { "folke/which-key.nvim", event = "VeryLazy", init = function() 
+		 vim.o.timeout = true vim.o.timeoutlen = 300
+		 require("which-key").setup{
+		 }
+	 end
+ }
 
 })
