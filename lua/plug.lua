@@ -22,7 +22,9 @@ require("lazy").setup({
 	 { "saadparwaiz1/cmp_luasnip" },
 	 { "L3MON4D3/LuaSnip" },
 	 { "rafamadriz/friendly-snippets" },
-	 { "CRAG666/code_runner.nvim", config = true },
+--	 { "CRAG666/code_runner.nvim", config = true },
+	 { "Zeioth/compiler.nvim", cmd = {"CompilerOpen", "CompilerToggleResults", "CompilerRedo"}, dependencies = { "stevearc/overseer.nvim" }, opts = {}, },
+	 { "stevearc/overseer.nvim" }, cmd = {"CompilerOpen", "CompilerToggleResults", "CompilerRedo" }, 
 	 { "nvim-telescope/telescope.nvim", tag = '0.1.5', dependencies = { "nvim-lua/plenary.nvim", }, },
 	 { "folke/which-key.nvim", event = "VeryLazy", init = function() 
 		 vim.o.timeout = true vim.o.timeoutlen = 300

@@ -17,21 +17,21 @@ require('lualine').setup{
 require('lspconfig')
 require('mason').setup()
 require('telescope').setup{}
-require('code_runner').setup({
-  filetype = {
-    c = {
-      "cd $dir &&",
-      "gcc $fileName &&",
-      "$dir/a.out"
-    },
-    python = "python3 -u",
-      rust = {
-      "cd $dir &&",
-      "rustc $fileName &&",
-      "$dir/$fileNameWithoutExt"
-    },
-  },
-})
+--require('code_runner').setup({
+--  filetype = {
+--    c = {
+--      "cd $dir &&",
+--      "gcc $fileName &&",
+--      "$dir/a.out"
+--    },
+--    python = "python3 -u",
+--      rust = {
+--      "cd $dir &&",
+--      "rustc $fileName &&",
+--      "$dir/$fileNameWithoutExt"
+--    },
+--  },
+--})
 require("which-key")
 -- Telescope keys
 local builtin = require('telescope.builtin')
