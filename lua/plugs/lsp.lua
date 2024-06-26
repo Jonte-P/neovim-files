@@ -5,7 +5,7 @@ lspconfig.tsserver.setup {}
 require 'lspconfig'.clangd.setup{}
 require 'lspconfig'.zls.setup{}
 require 'lspconfig'.lua_ls.setup{}
-require 'lspconfig'.hls.setup{}
+require 'lspconfig'.gopls.setup{}
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)

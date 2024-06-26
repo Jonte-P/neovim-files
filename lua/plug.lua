@@ -22,16 +22,6 @@ require("lazy").setup({
 	 { "saadparwaiz1/cmp_luasnip" },
 	 { "L3MON4D3/LuaSnip" },
 	 { "rafamadriz/friendly-snippets" },
-{"nvim-orgmode/orgmode",
-event = 'VeryLazy',
-ft = { 'org' },
-config = function()
-	require('orgmode').setup({
-		org_agenda_files = '~/orgfiles/**/*',
-		org_default_notes_file = '~/orgfiles/refile.org',
-	})
-end,
-},
 
 { -- This plugin
   "Zeioth/compiler.nvim",
