@@ -43,3 +43,6 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- Which-key configuration
 --local wk = require("which-key")
 --wk.register(mappings, opts)
+-- NeoGit configuration
+local neogit = require('neogit')
+neogit.setup {}

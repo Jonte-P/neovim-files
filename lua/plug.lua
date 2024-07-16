@@ -22,6 +22,7 @@ require("lazy").setup({
 	 { "saadparwaiz1/cmp_luasnip" },
 	 { "L3MON4D3/LuaSnip" },
 	 { "rafamadriz/friendly-snippets" },
+	 {"NeogitOrg/neogit", dependencies = {"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim", }, },
 
 { -- This plugin
   "Zeioth/compiler.nvim",
