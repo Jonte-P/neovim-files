@@ -46,3 +46,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- NeoGit configuration
 local neogit = require('neogit')
 neogit.setup {}
+-- barbar config
+vim.g.barbar_auto_setup = false
+require 'barbar'.setup {
+	animation = true,
+	clickable = true,
+	auto_hide = false,
+}
