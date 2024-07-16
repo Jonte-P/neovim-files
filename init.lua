@@ -41,6 +41,5 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 -- Which-key configuration
-local wk = require("which-key")
-wk.register(mappings, opts)
-
+--local wk = require("which-key")
+--wk.register(mappings, opts)
