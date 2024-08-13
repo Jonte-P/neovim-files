@@ -19,7 +19,7 @@ lua, neovim (as recent as possible), git, and a nerd font of your choice.
 ![screenshot](.screenshot.png)
 ## Installation
 ```bash
-git clone github.com/Jonte-P/neovim-files ~/.config/nvim
+git clone https://github.com/Jonte-P/neovim-files ~/.config/nvim
 ```
 
 
