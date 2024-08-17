@@ -22,10 +22,11 @@ require("lazy").setup({
 	 { "saadparwaiz1/cmp_luasnip" },
 	 { "L3MON4D3/LuaSnip" },
 	 { "rafamadriz/friendly-snippets" },
-	 {"NeogitOrg/neogit", dependencies = {"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim", }, },
-	 {"romgrk/barbar.nvim", dependencies = {"lewis6991/gitsigns.nvim", "nvim-tree/nvim-web-devicons", }, }, 
+	 { "NeogitOrg/neogit", dependencies = {"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim", }, },
+	 { "romgrk/barbar.nvim", dependencies = {"lewis6991/gitsigns.nvim", "nvim-tree/nvim-web-devicons", }, }, 
+	 { "LintaoAmons/bookmarks.nvim", dependencies = {"nvim-telescope/telescope.nvim" }, {"stevearc/dressing.nvim"}, },
 
-{ -- This plugin
+{ -- The code runner
   "Zeioth/compiler.nvim",
   cmd = {"CompilerOpen", "CompilerToggleResults", "CompilerRedo"},
   dependencies = { "stevearc/overseer.nvim" },
