@@ -1,7 +1,6 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
---lspconfig.tsserver.setup {}
 require 'lspconfig'.clangd.setup{}
 require'lspconfig'.ts_ls.setup{}
 require 'lspconfig'.zls.setup{}
