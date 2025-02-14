@@ -25,8 +25,6 @@ require("lazy").setup({
 	 { "NeogitOrg/neogit", dependencies = {"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim", }, },
 	 { "romgrk/barbar.nvim", dependencies = {"lewis6991/gitsigns.nvim", "nvim-tree/nvim-web-devicons", }, }, 
 	 { "kkharji/sqlite.lua" },
-	 { "LintaoAmons/bookmarks.nvim", dependencies = {"nvim-telescope/telescope.nvim" }, {"stevearc/dressing.nvim"}, },
-
 { -- The code runner
   "Zeioth/compiler.nvim",
   cmd = {"CompilerOpen", "CompilerToggleResults", "CompilerRedo"},
