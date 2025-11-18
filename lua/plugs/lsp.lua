@@ -1,6 +1,5 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
 vim.lsp.config('pyright')
 vim.lsp.config('clangd')
 vim.lsp.config('ts_ls')
