@@ -1,12 +1,14 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
-require 'lspconfig'.clangd.setup{}
-require'lspconfig'.ts_ls.setup{}
-require 'lspconfig'.zls.setup{}
-require 'lspconfig'.lua_ls.setup{}
-require 'lspconfig'.gopls.setup{}
-require 'lspconfig'.rust_analyzer.setup{}
+vim.lsp.config('pyright')
+vim.lsp.config('clangd')
+vim.lsp.config('ts_ls')
+vim.lsp.config('zls')
+vim.lsp.config('lua_ls')
+vim.lsp.config('gopls')
+vim.lsp.config('rust_analyzer')
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
