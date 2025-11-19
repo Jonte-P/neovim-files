@@ -13,7 +13,7 @@ lua, neovim (as recent as possible), git, and a nerd font of your choice.
 * The command for accessing the package manager is Lazy (preceded by a colon as all other (neo)vim commands are).
 * The default global leader is backslash. Backslash f opens/closes Neovim-Tree.
 * The default local leader is space. This is mostly used for LSP-related things, such as fixing errors upon detection on the LSP side, or sorting imports, among other things.
-* The default compiler plugin is compiler.nvim by Zeioth.Check out the [github repo](https://www.github.com/Zeioth/compiler.nvim) for information on how to configure it to suit your needs.
+* The default compiler plugin is compiler.nvim by Zeioth. Check out the [github repo](https://www.github.com/Zeioth/compiler.nvim) for information on how to configure it to suit your needs.
 * Which-key is activated by default. Upon pushing any key, (some modifiers too), it will show what they are bound to. Hitting backspace will go back to the root view.
 
 ## Screenshot
