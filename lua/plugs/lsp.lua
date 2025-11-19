@@ -1,12 +1,11 @@
 -- Setup language servers.
-local lspconfig = require('lspconfig')
-vim.lsp.config('pyright')
-vim.lsp.config('clangd')
-vim.lsp.config('ts_ls')
-vim.lsp.config('zls')
-vim.lsp.config('lua_ls')
-vim.lsp.config('gopls')
-vim.lsp.config('rust_analyzer')
+vim.lsp.enable('pyright')
+vim.lsp.enable('clangd')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('zls')
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('gopls')
+vim.lsp.enable('rust_analyzer')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
