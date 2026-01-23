@@ -15,6 +15,7 @@ require("lazy").setup({
 	 { "nvim-lualine/lualine.nvim", dependencies = { "kyazdani42/nvim-web-devicons", }, },
 	 { "neovim/nvim-lspconfig" },
 	 { "williamboman/mason.nvim" },
+	 { "williamboman/mason-lspconfig.nvim" },
 	 { "nvim-treesitter/nvim-treesitter", build=":TSUpdate" },
 	 { "hrsh7th/nvim-cmp" },
 	 { "hrsh7th/cmp-nvim-lsp" },
