@@ -17,7 +17,9 @@ require('lualine').setup{
 require('lspconfig')
 require('mason').setup()
 require('telescope').setup{}
-require('mason-lspconfig').setup()
+require('mason-lspconfig').setup {
+	automatic_enable = false
+}
 --require('code_runner').setup({
 --  filetype = {
 --    c = {
