@@ -7,6 +7,7 @@ vim.lsp.enable('lua_ls')
 vim.lsp.enable('gopls')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('jdtls')
+vim.lsp.enable('csharp_ls')
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
