@@ -11,7 +11,7 @@ require('plugs.luasnip')
 require('nvim-tree').setup{}
 require('lualine').setup{
 	options = {
-		theme = 'catppuccin'
+		theme = 'auto'
 	}
 }
 require('lspconfig')
