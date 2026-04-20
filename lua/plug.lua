@@ -16,7 +16,7 @@ require("lazy").setup({
 	 { "neovim/nvim-lspconfig" },
 	 { "williamboman/mason.nvim" },
 	 { "williamboman/mason-lspconfig.nvim" },
-	 { "nvim-treesitter/nvim-treesitter", build=":TSUpdate" },
+	 { "romus204/tree-sitter-manager.nvim", dependencies = {}, },
 	 { "hrsh7th/nvim-cmp" },
 	 { "hrsh7th/cmp-nvim-lsp" },
 	 { "catppuccin/nvim" , name ="catppuccin", priority = 1000 },
