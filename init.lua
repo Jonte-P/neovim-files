@@ -14,12 +14,24 @@ require('lualine').setup{
 		theme = 'auto'
 	}
 }
+-- NVM node
+-- Dynamically grab your nvm default node binary path
+-- Change 'v20.14.0' to whatever stable/default version you want Neovim to fallback on
+local node_version = "v26.8.1" 
+local nvm_node_path = vim.fn.expand("~/.nvm/versions/node/" .. node_version .. "/bin")
+
+-- Prepend it to Neovim's PATH environment variable
+if vim.fn.isdirectory(nvm_node_path) == 1 then
+    vim.env.PATH = nvm_node_path .. ":" .. vim.env.PATH
+end
+
 require('lspconfig')
 require('mason').setup()
 require('telescope').setup{}
 require('mason-lspconfig').setup {
 	automatic_enable = false
 }
+
 --require('code_runner').setup({
 --  filetype = {
 --    c = {
